@@ -14,7 +14,12 @@ const Search = () => {
 
   const handleButton = () => {
     const encoded = encodeURIComponent(searchText)
-    navigate(`/detail/${encoded}`)
+    if (!searchText) {
+      navigate('/')
+    } else {
+      navigate(`/detail/${encoded}`);
+    }
+    
   }
 
   return (
@@ -27,7 +32,7 @@ const Search = () => {
           <h5>Masukan ID Dokumen</h5>
         </div>
         <div className="input-search mb-3">
-          <input type="text" onChange={handleInput} value={searchText}></input>
+          <input type="text" onChange={handleInput} value={searchText} required></input>
         </div>
         <div className="button-search mt-4 mb-4">
           <button className="btn btn-danger btn-search" onClick={handleButton}>Cari Dokumen</button>
