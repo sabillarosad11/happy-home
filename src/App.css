@@ -1,38 +1,175 @@
-.App {
+.main-wrapper {
+  height: 100vh;
+  background-image: url(/src/assets/background_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.search-wrapper {
+  background-color: white;
+  width: 60%;
+  border-radius: 12px;
+}
+
+.logo-search img {
+  width: 150px;
+}
+
+.input-search input {
+  width: 400px;
+  height: 100px;
+  outline: none;
   text-align: center;
+  font-size: 20px;
+  background-color: #cdcd;
+  border-radius: 6px;
+  border: 1px solid #cdcd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.btn-search {
+  width: 180px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@media (max-width: 700px) {
+  .input-search input {
+  width: 300px;
+  height: 100px;
+  outline: none;
+  text-align: center;
+  font-size: 20px;
+  background-color: #cdcd;
+}
+
+.btn-search {
+  width: 150px;
+}
+}
+
+
+@media (max-width: 525px) {
+  .logo-search img {
+    width: 120px;
   }
+
+  .input-search input {
+  width: 200px;
+  height: 80px;
+  outline: none;
+  text-align: center;
+  font-size: 14px;
+  background-color: #cdcd;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-search {
+  width: 130px;
+}
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 400px) {
+  .logo-search img {
+  width: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-search {
+  margin-top: -20px;
+  margin-bottom: 2px;
+}
+
+.text-search h5 {
+  font-size: 16px;
+}
+    .input-search input {
+  width: 200px;
+  height: 50px;
+  outline: none;
+  text-align: center;
+  font-size: 14px;
+  background-color: #cdcd;
+  margin-top: 0;
+}
+}
+
+/* Document */
+.document-wrapper {
+  background-image: url(/src/assets/background_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.logo-doc img {
+  width: 160px;
+}
+
+
+.main-doc-wrapper {
+  background-color: #fff;
+  width: 70%;
+  border-radius: 6px;
+}
+
+.info-doc {
+  background-color: salmon;
+  width: 100%;
+  padding: 6px 0;
+}
+
+.info-doc h2 {
+  color: #fff
+}
+
+.name-doc {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.create-doc {
+  font-size: 12px;
+  text-align: left;
+}
+
+.id-doc {
+  font-size: 14px;
+}
+
+.date-doc {
+  font-size: 14px;
+}
+
+.table-light {
+  border-top: 1px solid black;
+}
+
+.table-light tr th {
+  color: grey;
+  font-size: 16px;
+  margin-left: -80px;
+  padding-right: 40px;
+}
+
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+th.status{
+  text-align: right;
+  margin-right: -20px;
+}
+
+.check-doc {
+  background-color: #ddd;
+  padding: 6px 0;
+}
+
+.check-doc h2 {
+  color: green;
 }
