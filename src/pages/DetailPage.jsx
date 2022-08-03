@@ -33,7 +33,7 @@ const DetailPage = () => {
           <img src={IC_Logo} alt=""></img>
         </div>
         <div className="info-doc mt-2">
-          <h2 className="text-center">Informasi Dokumen Ah</h2>
+          <h2 className="text-center">Informasi Dokumen</h2>
         </div>
         {datas["Kode Dokumen"] == id ? (
           <>
