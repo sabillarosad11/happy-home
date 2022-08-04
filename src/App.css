@@ -257,3 +257,7 @@ th.status{
 .not-data button:hover {
   background-color: rgb(238, 158, 149);
 }
+
+.preloaders {
+  height: 100vh;
+}
