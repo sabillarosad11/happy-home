@@ -241,12 +241,12 @@ th.status{
 
 
 /* Handle Error */
-.not-data {
+.no-data {
   padding-top: 50px;
   margin-bottom: 50px;
 }
 
-.not-data button {
+.no-data button {
   background-color: salmon;
   border: 1px solid salmon;
   outline: none;

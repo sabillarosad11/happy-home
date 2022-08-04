@@ -32,7 +32,7 @@ const Search = () => {
           <h5>Masukan ID Dokumen</h5>
         </div>
         <div className="input-search mb-3">
-          <input type="text" onChange={handleInput} value={searchText} required></input>
+          <input type="text" onChange={handleInput} value={searchText} placeholder='type your ID' required></input>
         </div>
         <div className="button-search mt-4 mb-4">
           <button className="btn btn-danger btn-search" onClick={handleButton}>Cari Dokumen</button>
